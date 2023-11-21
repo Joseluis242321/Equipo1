@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Registro de Proyecto</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css">
+  <style>
+    /* Estilos adicionales para mejorar la interfaz */
+    .bienvenida {
+      text-align: right;
+      font-size: 16px; /* Tamaño de fuente más pequeño */
+      margin-top: 5px; /* Reducir el espacio superior */
+      color: white; /* Texto en color blanco */
+      background-color: #000; /* Fondo negro */
+      padding: 5px 10px; /* Añadir relleno al texto */
+      border-radius: 5px; /* Bordes redondeados */
+    }
+    .titulo-principal {
+      text-align: center;
+      font-size: 28px;
+      margin-top: 20px;
+      color: white; /* Texto en color blanco */
+    }
+    .logo {
+      width: 100px; /* Ancho de la imagen */
+      height: auto; /* Altura automática proporcional al ancho */
+    }
+    .parte-superior {
+      background-color: #007bff; /* Fondo azul */
+      padding: 20px 0; /* Espaciado interior */
+    }
+    .contenedor-titulo {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .formulario {
+      width: 50%;
+      margin: 20px auto; /* Centrar el formulario */
+      background-color: white; /* Fondo blanco */
+      padding: 60px; /* Espaciado interior del formulario */
+      border-radius: 10px; /* Bordes redondeados */
+    }
+    .mensaje {
+      text-align: center;
+      margin-top: 20px;
+      display: none; /* Ocultar el mensaje inicialmente */
+    }
+  </style>
+</head>
+<body>
+
+<div class="container-fluid parte-superior">
+  <div class="container mt-4">
+    <div class="contenedor-titulo">
+      <div>
+        <div class="titulo-principal">REGISTRA TU PROYECTO</div>
+        <br>
+        <span class="bienvenida">
+          Bienvenido Alumno: <strong style="color: white;">José Luis Rodríguez Mendoza</strong>
+        </span>
+      </div>
+      <div class="seccion">
+        <!-- Agregar la imagen en la parte superior izquierda -->
+        <img src="img/proyecto1.jpg" alt="Logo" class="logo">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container formulario">
+  <form id="registroForm">
+    <div class="mb-3">
+      <label for="nombreProyecto" class="form-label">Nombre del Proyecto</label>
+      <input type="text" class="form-control" id="nombreProyecto" name="nombreProyecto" required>
+      <br>
+    </div>
+    <div class="mb-3">
+      <label for="tematica" class="form-label">Temática</label>
+      <input type="text" class="form-control" id="tematica" name="tematica" required>
+      <br>
+    </div>
+    <div class="mb-3">
+      <label for="revisor" class="form-label">Seleccionar Revisor</label>
+      <select class="form-select" id="revisor" name="revisor" required>
+        <option value=""></option>
+        <option value=""></option>
+        <option value="Martha Leticia Martinez Mora">Martha Leticia Martinez Mora</option>
+        <option value="Maribel Miranda Estevez">Maribel Miranda Estevez</option>
+        <option value="Mauro Sanchez Sanchez">Mauro Sanchez Sanchez</option>
+      </select>
+    </div>
+    <br>
+    <br>
+    <div style="text-align: center">
+      <button type="submit" class="btn btn-primary" id="registrarProyecto">Registrar Proyecto</button>
+      <div class="mensaje" id="mensajeRegistro">Proyecto Registrado</div>
+    </div>
+  </form>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="registrar_proyecto.js"></script> <!-- Archivo JS para manejar la lógica del registro -->
+
+<script>
+  $(document).ready(function() {
+    $('#registroForm').submit(function(event) {
+      event.preventDefault(); // Evitar el envío del formulario
+
+      // Mostrar el mensaje de "Proyecto Registrado"
+      $('#mensajeRegistro').fadeIn().delay(2000).fadeOut();
+    });
+  });
+</script>
+</body>
+</html>
