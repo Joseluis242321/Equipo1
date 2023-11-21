@@ -1,0 +1,17 @@
+$(document).ready(function() {
+    // Lógica para cargar los revisores disponibles en el select
+    // Puedes realizar una petición AJAX a un archivo PHP que devuelva los revisores
+  
+    $('#registroForm').submit(function(event) {
+      event.preventDefault();
+      // Obtener datos del formulario
+      const nombreProyecto = $('#nombreProyecto').val();
+      const tematica = $('#tematica').val();
+      const revisorSeleccionado = $('#revisor').val();
+  
+      // Realizar una petición AJAX para enviar datos del proyecto y el revisor asignado al servidor PHP
+      // Aquí se realizaría la lógica para insertar el proyecto en la base de datos y asignar el revisor
+  
+      // Después de procesar la solicitud, redirigir a otra página o mostrar un mensaje de éxito
+    });
+  });
