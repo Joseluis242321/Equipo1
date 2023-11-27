@@ -8,26 +8,26 @@
     /* Estilos adicionales para mejorar la interfaz */
     .bienvenida {
       text-align: right;
-      font-size: 16px; /* Tamaño de fuente más pequeño */
-      margin-top: 5px; /* Reducir el espacio superior */
-      color: white; /* Texto en color blanco */
-      background-color: #000; /* Fondo negro */
-      padding: 5px 10px; /* Añadir relleno al texto */
-      border-radius: 5px; /* Bordes redondeados */
+      font-size: 16px;
+      margin-top: 5px;
+      color: white; 
+      background-color: #000;
+      padding: 5px 10px;
+      border-radius: 5px; 
     }
     .titulo-principal {
       text-align: center;
       font-size: 28px;
       margin-top: 20px;
-      color: white; /* Texto en color blanco */
+      color: white;
     }
     .logo {
-      width: 100px; /* Ancho de la imagen */
-      height: auto; /* Altura automática proporcional al ancho */
+      width: 100px;
+      height: auto;
     }
     .parte-superior {
-      background-color: #007bff; /* Fondo azul */
-      padding: 20px 0; /* Espaciado interior */
+      background-color: #007bff;
+      padding: 20px 0;
     }
     .contenedor-titulo {
       display: flex;
@@ -36,15 +36,15 @@
     }
     .formulario {
       width: 50%;
-      margin: 20px auto; /* Centrar el formulario */
-      background-color: white; /* Fondo blanco */
-      padding: 60px; /* Espaciado interior del formulario */
-      border-radius: 10px; /* Bordes redondeados */
+      margin: 20px auto; 
+      background-color: white;
+      padding: 60px; 
+      border-radius: 10px; 
     }
     .mensaje {
       text-align: center;
       margin-top: 20px;
-      display: none; /* Ocultar el mensaje inicialmente */
+      display: none; 
     }
   </style>
 </head>
